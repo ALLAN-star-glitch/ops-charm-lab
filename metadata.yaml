@@ -1,0 +1,11 @@
+name: demo-web-app
+summary: Demo web app charm
+description: Demo web app charm for testing ops framework
+
+containers:
+  web:
+    resource: web-image
+
+requires:
+  db:
+    interface: postgresql_client
